@@ -1,0 +1,1 @@
+flask\Scripts\gunicorn.exe runp-heroku.py:app

@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>{{user}} - Bus Results</title>
+  </head>
+  <body>
+      <h1>{{user}} - Bus Results</h1>
+	  {% for bus in results[:1] %}
+      <h1>{{bus[0]}} {{bus[2]}}mins</h1>
+      {% endfor %}
+	  {% for bus in results[1:] %}
+      <h2>{{bus[0]}} {{bus[2]}}mins</h2>
+      {% endfor %}
+      <h1> *end* </h1>
+  </body>
+</html>
